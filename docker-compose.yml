@@ -2,7 +2,7 @@ version: "3"
 
 services:
   db:
-    image: "mariadb:10.8"
+    image: "mariadb:latest"
     restart: "always"
     volumes:
       # without volumes, data would be reset everytime
