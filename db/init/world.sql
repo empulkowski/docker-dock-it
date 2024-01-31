@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.4-dev+20220331.b9ddf0b305
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost
--- Generation Time: Jan 09, 2023 at 11:20 AM
--- Server version: 10.4.27-MariaDB
--- PHP Version: 8.0.26
+-- Host: db
+-- Generation Time: Jan 31, 2024 at 06:40 PM
+-- Server version: 11.2.2-MariaDB-1:11.2.2+maria~ubu2204
+-- PHP Version: 8.2.15
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -33,7 +33,7 @@ CREATE TABLE `City` (
   `CountryCode` char(3) NOT NULL DEFAULT '',
   `District` char(20) NOT NULL DEFAULT '',
   `Population` int(11) NOT NULL DEFAULT 0
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_general_ci;
 
 --
 -- Dumping data for table `City`
@@ -4145,7 +4145,7 @@ CREATE TABLE `Country` (
   `HeadOfState` char(60) DEFAULT NULL,
   `Capital` int(11) DEFAULT NULL,
   `Code2` char(2) NOT NULL DEFAULT ''
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_general_ci;
 
 --
 -- Dumping data for table `Country`
@@ -4403,7 +4403,7 @@ CREATE TABLE `CountryLanguage` (
   `Language` char(30) NOT NULL DEFAULT '',
   `IsOfficial` enum('T','F') NOT NULL DEFAULT 'F',
   `Percentage` float(4,1) NOT NULL DEFAULT 0.0
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_general_ci;
 
 --
 -- Dumping data for table `CountryLanguage`
